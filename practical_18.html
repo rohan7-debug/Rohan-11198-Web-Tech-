@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Element using DOM</title>
+</head>
+<body>
+
+    <h2>Create New Element</h2>
+
+    <button onclick="createPara()">Add Paragraph</button>
+
+    <script>
+        function createPara() {
+            let p = document.createElement("p");
+            p.innerHTML = "This paragraph is created using JavaScript";
+            document.body.appendChild(p);
+        }
+    </script>
+
+</body>
+</html>

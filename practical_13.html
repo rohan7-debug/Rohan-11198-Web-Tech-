@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Function and Scope</title>
+</head>
+<body>
+
+    <h2>User Defined Function & Variable Scope</h2>
+
+    <script>
+        var a = 10;
+
+        function showScope() {
+            var b = 20;
+            let c = 30;
+            const d = 40;
+
+            document.write("Inside Function:<br>");
+            document.write("var b = " + b + "<br>");
+            document.write("let c = " + c + "<br>");
+            document.write("const d = " + d + "<br><br>");
+        }
+
+        showScope();
+
+        document.write("Outside Function:<br>");
+        document.write("var a = " + a);
+    </script>
+
+</body>
+</html>

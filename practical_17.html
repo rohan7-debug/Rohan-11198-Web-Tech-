@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener Example</title>
+</head>
+<body>
+
+    <h2>JavaScript Event Listener</h2>
+
+    <button id="btn">Click Me</button>
+
+    <p id="msg"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", showMessage);
+
+        function showMessage() {
+            document.getElementById("msg").innerHTML = "Button was clicked";
+        }
+    </script>
+
+</body>
+</html>
